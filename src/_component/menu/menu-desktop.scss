@@ -1,0 +1,17 @@
+@media (min-width:1024px) {
+    // style for desktop
+    .menu {
+        display:flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .menu__panel {
+        flex-grow: 1;
+
+        &:first-child {
+            margin-right: 1rem;
+        }
+
+    }
+}
