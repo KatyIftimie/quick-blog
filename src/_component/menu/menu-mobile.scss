@@ -4,6 +4,9 @@
 
 .menu__panel {
     margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 
 }
 
@@ -24,6 +27,7 @@
     border-bottom-right-radius: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;
+    flex-grow: 1;
 
     a {
         color: $color-white;
