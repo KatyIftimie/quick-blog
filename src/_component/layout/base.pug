@@ -1,16 +1,19 @@
 doctype html
 html
-    block config
-    head
-        title=title
-        meta(name="description", content=description)
-        link(rel="stylesheet", href=`${baseUrl}/style.css`)
-        //- if config.entry.css.embed
-        //-     link(rel="stylesheet", href=`${embedPath}`, embed)
-        //- link(href="https://fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
-    body 
-        include ../welcome/welcome
-        .container
-            block content
-            include ../menu/menu
-            include ../footer/footer
+-
+    var baseUrl = 'https://katyiftimie.github.io/quick-blog'
+    //- var baseUrl = 'http://localhost:3000'
+block config
+head
+    title=title
+    meta(name="description", content=description)
+    link(rel="stylesheet", href=`${baseUrl}/style.css`)
+    //- if config.entry.css.embed
+    //-     link(rel="stylesheet", href=`${embedPath}`, embed)
+    //- link(href="https://fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
+body 
+    include ../welcome/welcome
+    .container
+        block content
+        include ../menu/menu
+        include ../footer/footer
